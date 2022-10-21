@@ -1,0 +1,80 @@
+@import "./src/utils/sass/main";
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.menu__ul {
+  position: fixed;
+  top: 70px;
+  right: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 70vh;
+  max-height: 600px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-left: 10px solid var(--color-green);
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  @include text-01;
+  text-transform: capitalize;
+  transition: 1000ms;
+
+  &--open {
+    display: flex;
+    right: 0;
+    transition: 500ms;
+  }
+  &__li {
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__ul {
+    top: 100px;
+    right: -310px;
+    width: 310px;
+    max-height: 600px;
+    @include text-bold-05;
+    font-weight: 400;
+    &--open {
+      right: 0;
+      transition: 800ms;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+    overflow: hidden;
+  }
+
+  .menu__ul {
+    position: static;
+    flex-direction: row;
+    width: 650px;
+    height: auto;
+    border: none;
+    @include text-01;
+  }
+}
