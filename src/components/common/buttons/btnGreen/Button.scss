@@ -1,0 +1,40 @@
+@import "./src/utils/sass/main";
+
+.btn {
+  border: none;
+  text-transform: capitalize;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  &--small {
+    width: 120px;
+    height: 30px;
+    @include text-bold-07;
+  }
+
+  &--medium {
+    width: 180px;
+    height: 35px;
+    @include text-bold-06;
+  }
+
+  &--big {
+    width: 220px;
+    height: 45px;
+    @include text-bold-06;
+  }
+
+  &--border {
+    border: 2px solid var(--color-white);
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .btn {
+    &--small {
+      width: 180px;
+      height: 35px;
+      @include text-bold-06;
+    }
+  }
+}
