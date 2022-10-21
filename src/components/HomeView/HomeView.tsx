@@ -6,7 +6,7 @@ import {Menu} from "../common/Menu/Menu";
 export const HomeView = () => {
   return (
     <Container>
-      <Menu/>
+      <Menu page="overview"/>
     </Container>
   );
 };

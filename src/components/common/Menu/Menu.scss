@@ -38,6 +38,10 @@
     cursor: pointer;
     text-decoration: none;
     transition: 0.2s;
+    &--active{
+      color: var(--color-black);
+      text-decoration: underline;
+    }
     &:hover {
       text-decoration: underline;
     }

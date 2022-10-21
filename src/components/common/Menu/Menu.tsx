@@ -3,9 +3,11 @@ import { Button } from "../buttons/btnGreen/Button";
 import { MenuData } from "./MenuData";
 import "./Menu.scss";
 import { MenuIcon } from "./MenuIcon/MenuIcon";
+import { useNavigate } from "react-router-dom";
 
-export const Menu = () => {
+export const Menu = (props: { page: string }) => {
   const [openMenu, setOpenMenu] = useState(false);
+  const navigate = useNavigate();
 
   const openMenuHandler = () => {
     setOpenMenu(!openMenu);
@@ -16,7 +18,13 @@ export const Menu = () => {
       <ul className={`menu__ul ${openMenu ? "menu__ul--open" : null}`}>
         {MenuData.map((li, index) => {
           return (
-            <li className="menu__ul__li" key={index}>
+            <li
+              className={`menu__ul__li ${
+                props.page === li.title ? "menu__ul__li--active" : null
+              }`}
+              key={index}
+              onClick={() => navigate(li.path)}
+            >
               {li.title}
             </li>
           );
