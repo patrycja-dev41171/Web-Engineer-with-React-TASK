@@ -1,0 +1,77 @@
+@import "./src/utils/sass/main";
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  &__info {
+    & h2 {
+      padding: 0 0 10px;
+      @include text-bold-05;
+      & span {
+        color: var(--color-green);
+      }
+    }
+    & p {
+      @include text-03;
+      line-height: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  & img {
+    padding-top: 20px;
+    margin: 0 20px 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .slider {
+    &__info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    & img {
+      margin: auto 0 0 auto;
+      width: 40%;
+      height: 40%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    padding: 20px 50px;
+    &__info {
+      & h2 {
+        @include text-bold-04;
+      }
+      & p {
+        @include text-02;
+        line-height: 28px;
+        width: 80%;
+      }
+    }
+    & img {
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .slider {
+    width: 1200px;
+    margin: 0 auto;
+    &__info {
+      & h2 {
+        @include text-bold-01;
+      }
+      & p {
+        @include text-01;
+        line-height: 28px;
+        width: 60%;
+      }
+    }
+  }
+}
