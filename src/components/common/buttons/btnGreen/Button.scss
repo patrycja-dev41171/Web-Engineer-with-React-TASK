@@ -36,5 +36,10 @@
       height: 35px;
       @include text-bold-06;
     }
+    &--medium {
+      width: 220px;
+      height: 45px;
+      @include text-bold-06;
+    }
   }
 }
