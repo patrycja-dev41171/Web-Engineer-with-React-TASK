@@ -1,0 +1,84 @@
+@import "src/utils/sass/main";
+.section_3 {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto auto;
+  &__title {
+    height: 140px;
+    border-left: 5px solid var(--color-green);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & p {
+      padding: 0 20px;
+      @include text-bold-05;
+      color: var(--color-green);
+    }
+  }
+  &__text {
+    padding: 40px 0 0;
+    & img {
+      padding: 0 0 20px;
+    }
+    &__quote {
+      font-style: italic;
+      @include text-02;
+      line-height: 20px;
+    }
+    &__author {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0 0;
+      & p {
+        margin: 0;
+      }
+      & img {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section_3 {
+    padding: 40px 0 80px;
+    display: flex;
+    &__title {
+      height: auto;
+      width: 35%;
+      & p {
+        @include text-bold-04;
+      }
+    }
+    &__text {
+      width: 65%;
+      padding: 0;
+      & img {
+        &.section_3__text__img {
+          padding: 0;
+        }
+      }
+      &__quote {
+        @include text-01;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section_3 {
+    &__title {
+      width: 30%;
+      border-left: 10px solid var(--color-green);
+      & p {
+        padding: 0 30px;
+      }
+    }
+    &__text {
+      width: 45%;
+      padding: 0 0 0 100px;
+    }
+  }
+}
