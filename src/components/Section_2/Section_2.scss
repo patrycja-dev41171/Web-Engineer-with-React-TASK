@@ -25,10 +25,11 @@
 
 @media screen and (min-width: 1300px) {
   .section_2 {
+    padding: 100px 40px 10px;
     width: 1200px;
     & h2 {
       padding: 20px 0;
-      @include text-bold-03;
+      @include text-bold-02;
     }
   }
 }
