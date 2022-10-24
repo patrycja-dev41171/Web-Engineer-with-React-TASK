@@ -31,7 +31,7 @@ export const Menu = (props: { page: string }) => {
         })}
       </ul>
       <Button title="contact us" size="small" border={false} />
-      <MenuIcon open={openMenuHandler} />
+      <MenuIcon openMenu={openMenuHandler} />
     </div>
   );
 };

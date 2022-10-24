@@ -54,8 +54,6 @@
         width: 80%;
       }
     }
-    & img {
-    }
   }
 }
 
@@ -72,6 +70,10 @@
         line-height: 28px;
         width: 60%;
       }
+    }
+    & img {
+      width: 560px;
+      height: 360px;
     }
   }
 }
