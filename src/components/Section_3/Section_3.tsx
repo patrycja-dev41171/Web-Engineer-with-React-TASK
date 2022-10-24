@@ -3,7 +3,7 @@ import "./Section_3.scss";
 
 export const Section_3 = () => {
   return (
-    <div className="section_3">
+    <section className="section_3">
       <div className="section_3__title">
         <p>Bibendum at varius vel pharetra vel turpis nunc eget lorem.</p>
       </div>
@@ -30,6 +30,6 @@ export const Section_3 = () => {
           alt=""
         />
       </div>
-    </div>
+    </section>
   );
 };
