@@ -6,6 +6,9 @@ Recruitment task for the position of: Web Engineer with React in CodiLime.
 
 <a href="https://codilime-patrycja-dev41171.networkmanager.pl/" target="_blank">See the results -></a>
 
+[I had a problem with the Github pages so I decided to publish the task on a different server.
+I have implemented SSL so there is nothing to worry about.]
+
 ## Informations ℹ️
 
 The task was carried out according to the design in Figma.
