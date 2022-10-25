@@ -5,6 +5,7 @@ import { Slider } from "../Slider/Slider";
 import { Section_2 } from "../Section_2/Section_2";
 import { Section_3 } from "../Section_3/Section_3";
 import { Section_4 } from "../Section_4/Section_4";
+import { Section_7 } from "../Section_7/Section_7";
 import "./HomeView.scss";
 
 export const HomeView = () => {
@@ -19,6 +20,7 @@ export const HomeView = () => {
         <Section_2 />
         <Section_3 />
         <Section_4 />
+        <Section_7 />
       </main>
     </Container>
   );

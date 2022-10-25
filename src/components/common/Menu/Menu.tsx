@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button } from "../buttons/btnGreen/Button";
 import { MenuData } from "./MenuData";
-import "./Menu.scss";
 import { MenuIcon } from "./MenuIcon/MenuIcon";
 import { useNavigate } from "react-router-dom";
+import "./Menu.scss";
 
 export const Menu = (props: { page: string }) => {
   const [openMenu, setOpenMenu] = useState(false);
