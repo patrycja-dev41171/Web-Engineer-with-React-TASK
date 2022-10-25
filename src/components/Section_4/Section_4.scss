@@ -9,9 +9,6 @@
     @include text-02;
     padding: 10px 0;
     line-height: 20px;
-    & span {
-      font-weight: 700;
-    }
   }
   &__blocks {
     display: flex;

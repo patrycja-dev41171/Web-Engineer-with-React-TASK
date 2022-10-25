@@ -1,3 +1,5 @@
+@import "src/utils/sass/main";
+
 .closed {
   .vertical {
     transition: all 0.5s ease-in-out;
@@ -29,6 +31,7 @@
   height: 30px;
   border-radius: 100%;
   border: solid 3px var(--color-green);
+  @include shake-animation;
 }
 .circle-plus .circle .horizontal {
   position: absolute;

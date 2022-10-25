@@ -8,7 +8,11 @@ export const Section_3 = () => {
         <p>Bibendum at varius vel pharetra vel turpis nunc eget lorem.</p>
       </div>
       <div className="section_3__text">
-        <img src="assets/section3-icon1.png" alt="" />
+        <img
+          className="icon"
+          src="assets/section3-icon1.png"
+          alt="Quotation mark icon"
+        />
         <p className="section_3__text__quote">
           Aliquam purus sit amet luctus venenatis lectus magna. Faucibus purus
           in massa tempor nec feugiat nisl pretium fusce. Tortor vitae purus
@@ -19,15 +23,15 @@ export const Section_3 = () => {
         <div className="section_3__text__author">
           <p>Faucibus Vitae, Office Assistant</p>
           <img
-            className="section_3__text__img"
+            className="icon"
             src="assets/section3-icon2.png"
-            alt=""
+            alt="Quotation mark icon"
           />
         </div>
         <img
           className="section_3__text__img"
           src="assets/invision.png"
-          alt=""
+          alt="Company logo photos: InVision."
         />
       </div>
     </section>

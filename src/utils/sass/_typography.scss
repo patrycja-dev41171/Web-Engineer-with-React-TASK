@@ -1,9 +1,11 @@
 @mixin bold {
+  cursor: default;
   font-weight: 700;
   margin: 0;
 }
 
 @mixin regular {
+  cursor: default;
   font-weight: 400;
   margin: 0;
 }
