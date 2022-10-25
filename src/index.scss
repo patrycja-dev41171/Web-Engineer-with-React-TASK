@@ -1,0 +1,17 @@
+@import "./utils/sass/main";
+
+:root {
+  --color-green: #29cc6a;
+  --color-white: #ffffff;
+  --color-black: #2b2d26;
+  --color-grey: #787a7c;
+  --color-50shades: #a9acac;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}

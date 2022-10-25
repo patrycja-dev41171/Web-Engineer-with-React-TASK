@@ -1,0 +1,77 @@
+@import "src/utils/sass/main";
+
+.block {
+  min-width: 150px;
+  min-height: 130px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(41, 55, 69, 0.15);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  margin: 10px 20px 10px 0;
+  & .svg {
+    fill: #a9acac;
+  }
+  & .svg--green {
+    fill: var(--color-green);
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    @include text-04;
+    color: var(--color-green);
+    text-decoration: underline;
+    margin-right: 10px;
+  }
+}
+
+.block:hover {
+  transition: 500ms;
+  background-color: var(--color-green);
+  cursor: pointer;
+  & .svg {
+    fill: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block {
+    min-width: 220px;
+    min-height: 175px;
+
+    & .svg {
+      width: 37px;
+      height: 37px;
+    }
+
+    & .svg--green {
+      bottom: 25px;
+      right: 20px;
+      width: 15px;
+      height: 15px;
+    }
+
+    &__text {
+      color: var(--color-white);
+      position: absolute;
+      bottom: 11px;
+      right: 50px;
+      @include text-01;
+    }
+  }
+}
