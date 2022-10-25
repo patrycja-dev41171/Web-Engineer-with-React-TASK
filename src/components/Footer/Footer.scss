@@ -1,0 +1,149 @@
+@import "./src/utils/sass/main";
+
+.footer__lists {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    & h4 {
+      @include text-bold-07;
+      padding: 5px 0;
+    }
+    & li {
+      @include text-03;
+      padding: 5px 0;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  & img {
+    padding: 0 10px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+}
+
+.footer__hr {
+  height: 2px;
+  margin: 20px 20px 0;
+  background-color: var(--color-green);
+}
+
+.footer__info {
+  @include text-04;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  &__first,
+  &__second,
+  &__third,
+  &__fourth {
+    margin: 10px 20px;
+  }
+  &__second:hover,
+  &__third:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__lists {
+    justify-content: flex-start;
+    &__list {
+      margin: 30px 40px;
+      & h4 {
+        padding: 6px 0;
+      }
+      & li {
+        padding: 6px 0;
+      }
+    }
+  }
+
+  .footer__social {
+    margin: 20px 40px 40px;
+    & img {
+      padding: 0 10px;
+    }
+  }
+
+  .footer__hr {
+    margin: 20px 40px 0;
+  }
+
+  .footer__info {
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    &__first,
+    &__second,
+    &__third,
+    &__fourth {
+      margin: 10px 0;
+    }
+    &__second,
+    &__third,
+    &__fourth {
+      margin: 10px 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .footer__lists {
+    width: 1200px;
+    margin: 40px auto;
+    &__list {
+      margin: 0 80px 0 0;
+      & h4 {
+        @include text-bold-05;
+        padding: 10px 0;
+      }
+      & li {
+        @include text-02;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .footer__social {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer__hr {
+    width: 1200px;
+    margin: 40px auto 0;
+  }
+
+  .footer__info {
+    width: 1200px;
+    padding-bottom: 0;
+    @include text-03;
+    margin: 10px auto 30px auto;
+    &__first {
+      margin: 10px 30px 10px 0;
+    }
+    &__second,
+    &__third,
+    &__fourth {
+      margin: 10px 30px;
+    }
+  }
+}
