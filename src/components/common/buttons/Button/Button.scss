@@ -5,6 +5,13 @@
   text-transform: capitalize;
   color: var(--color-white);
   background-color: var(--color-green);
+  &:hover {
+    cursor: pointer;
+    color: var(--color-green);
+    background-color: var(--color-white);
+    transition: 300ms;
+    border: 2px solid var(--color-green);
+  }
   &--small {
     width: 120px;
     height: 30px;

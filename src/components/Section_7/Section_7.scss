@@ -21,8 +21,12 @@
       border: none;
       @include text-04;
       width: 50%;
+      max-width: 500px;
       margin-right: 10px;
       padding: 0 0 0 10px;
+      &:hover {
+        cursor: text;
+      }
     }
     & input::placeholder {
       color: var(--color-green);

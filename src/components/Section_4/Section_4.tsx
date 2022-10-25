@@ -7,10 +7,10 @@ export const Section_4 = () => {
     <section className="section_4">
       <h2>Massa tempor nec feugiat nisl pretium fusce</h2>
       <p>
-        Pellentesque <span>habitant</span> morbi tristique senectus et netus et
+        Pellentesque <strong>habitant</strong> morbi tristique senectus et netus et
         malesuada.
-        <span>Ipsum faucibus vitae</span> aliquet nec ullamcorper sit amet risus
-        nullam. Dictum varius duis at consectetur <span>lorem donec</span> massa
+        <strong>Ipsum faucibus vitae</strong> aliquet nec ullamcorper sit amet risus
+        nullam. Dictum varius duis at consectetur <strong>lorem donec</strong> massa
         sapien. Massa tempor nec feugiat nisl pretium fusce.
       </p>
       <p>Elit scelerisque mauris pellentesque?</p>

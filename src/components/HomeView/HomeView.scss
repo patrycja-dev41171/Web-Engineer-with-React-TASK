@@ -3,9 +3,13 @@
 header {
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 120px;
   & .logo {
     @include text-bold-05;
     padding-left: 20px;
+    position: absolute;
+    top: 80px
   }
 }
 
@@ -16,7 +20,10 @@ footer {
 
 @media screen and (min-width: 768px) {
   header {
+    height: 180px;
+
     & .logo {
+      top: 100px;
       padding-left: 40px;
       @include text-bold-04;
     }
@@ -25,11 +32,15 @@ footer {
 
 @media screen and (min-width: 1300px) {
   header {
+    height: 180px;
     & .logo {
       @include text-bold-03;
       margin: 0 auto;
       width: 1200px;
       padding: 10px 0 70px;
+      top: 80px;
+      left: 50%;
+      transform: translate(-50%);
     }
   }
 }

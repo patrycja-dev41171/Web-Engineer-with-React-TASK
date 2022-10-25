@@ -1,6 +1,6 @@
 import React from "react";
 import "./Slider.scss";
-import { Button } from "../common/buttons/btnGreen/Button";
+import { Button } from "../common/buttons/Button/Button";
 
 export const Slider = () => {
   return (
@@ -17,7 +17,7 @@ export const Slider = () => {
         </p>
         <Button title="discover now" size="medium" border={false} />
       </div>
-      <img src="/assets/photo.png" alt="" />
+      <img src="/assets/photo.png" alt="Photo: woman with laptop." />
     </section>
   );
 };
